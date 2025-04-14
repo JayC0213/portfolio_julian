@@ -1,0 +1,188 @@
+/*
+CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+*/
+
+/* body stuff */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+ }
+ 
+ 
+ *,
+ *:before,
+ *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background: linear-gradient(#e69464, #9464e6);
+ }
+
+ h2, h3 {
+   font-family: "Silkscreen", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ p {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 300;
+  font-size: xx-large;
+  font-style: normal;
+ }
+
+ img {
+   opacity: 1;
+   transition: opacity 0.5s ease;
+   object-fit: cover;
+ }
+
+ img:hover {
+   opacity: 0.5;
+ }
+
+ #canvas {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+ .content-wrapper {
+   flex: 1 0 auto;
+   margin: auto;
+   justify-content: center;
+   text-align: center;
+   padding: 30px;
+   max-width: 900px;
+   flex-direction: column;
+}
+
+ .project-wrapper {
+   margin: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   object-fit: cover;
+ }
+
+ .intro-wrapper {
+  margin: auto;
+  max-width: 100px;
+  height: auto;
+  display: flex;
+  object-fit: cover;
+ }
+ 
+ .topbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   padding: 0 50px;
+   background-color: rgb(216, 216, 216, 0.5);
+   color: #000000;
+ }
+
+ .name a {
+   color: #000000;
+   text-decoration: none;
+   font-size: 24px;
+   font-family: "Silkscreen", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ /* nav stuff */
+
+ .nav-links {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   list-style: none;
+ }
+ 
+ .nav-links li {
+   margin: 20px 30px;
+   /* width: 250px; */
+   justify-content: center;
+ }
+ 
+ .nav-links a {
+   color: #000000;
+   font-size: 18px;
+   transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
+   padding: 5px 10px;
+   font-family: "Silkscreen", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ .nav-links a:hover,
+ .nav-links a.active {
+   color: #e0e0e0;
+   background-color: #8d388d;
+   border-radius: 4px;
+ }
+
+ /* footer stuff */
+
+ footer {
+   background: rgb(216, 216, 216, 0.5);
+   color: rgb(0, 0, 0)
+}
+
+.socials {
+   list-style-type: none;
+   padding: 0;
+}
+
+.socials li {
+   display: inline-block;
+   margin-left: 5px;
+}
+
+.socials img {
+   width: 32px;
+}
+
+.socials img:hover {
+   opacity: 0.5;
+}
+
+
+@media screen and (min-width: 860px) {
+   footer {
+       display: flexbox;
+       justify-content: space-between;
+       padding: 0 20px;
+   }
+}
+
+@media screen and (max-width: 859px) {
+   footer {
+       text-align: center;
+       padding: 10px;
+  }
+
+   .project-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .topbar {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
