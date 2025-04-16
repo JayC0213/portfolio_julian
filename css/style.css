@@ -108,7 +108,6 @@ html {
  
  .nav-links li {
    margin: 20px 30px;
-   /* width: 250px; */
    justify-content: center;
  }
  
@@ -156,7 +155,7 @@ html {
 
 /* media screen */
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 683px) {
    footer {
        display: flexbox;
        justify-content: space-between;
@@ -164,7 +163,7 @@ html {
    }
 }
 
-@media screen and (max-width: 859px) {
+@media screen and (max-width: 682px) {
    footer {
        text-align: center;
        padding: 10px;
