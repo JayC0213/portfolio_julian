@@ -155,7 +155,7 @@ html {
 
 /* media screen */
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 431px) {
    footer {
        display: flexbox;
        justify-content: space-between;
@@ -163,7 +163,7 @@ html {
    }
 }
 
-@media screen and (max-width: 429px) {
+@media screen and (max-width: 430px) {
    footer {
        text-align: center;
        padding: 10px;
