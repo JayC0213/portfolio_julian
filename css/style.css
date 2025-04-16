@@ -51,11 +51,7 @@ html {
    opacity: 0.5;
  }
 
- #canvas {
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-}
+ /* main content */
 
  .content-wrapper {
    flex: 1 0 auto;
@@ -158,6 +154,7 @@ html {
    opacity: 0.5;
 }
 
+/* media screen */
 
 @media screen and (min-width: 860px) {
    footer {
